@@ -1,0 +1,28 @@
+{
+  "name": "smart-display-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --host 0.0.0.0 --port 8989",
+    "dev:https": "DEV_HTTPS=true vite dev --host 0.0.0.0 --port 8989",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 8989",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "start": "HOST=0.0.0.0 PORT=8989 node --require dotenv/config build",
+    "cert:dev": "bash scripts/generate-dev-cert.sh"
+  },
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.1.0",
+    "@sveltejs/adapter-node": "^5.2.12",
+    "@sveltejs/kit": "^2.17.1",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@types/node": "^22.13.9",
+    "dotenv": "^17.4.0",
+    "svelte": "^5.16.0",
+    "svelte-check": "^4.1.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}
