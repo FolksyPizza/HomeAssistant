@@ -2,6 +2,6 @@
   "googleCalendar": {
     "clientId": "",
     "clientSecret": "",
-    "redirectUri": "https://192.168.1.246:8989/api/calendar/oauth/callback"
+    "redirectUri": "https://localhost:8989/api/calendar/oauth/callback"
   }
 }
